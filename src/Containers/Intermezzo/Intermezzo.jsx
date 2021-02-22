@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Intermezzo = () => {
     return (
         <div>
-            TOP
+            Intermezzo
         </div>
     )
 }
 
-export default Top
+export default Intermezzo

@@ -4,9 +4,24 @@ import './index.css';
 import App from './Containers/App/App';
 import reportWebVitals from './reportWebVitals';
 
+import { ConnectedRouter } from "connected-react-router";
+import history from "./utils/history";
+
+import { Provider } from "react-redux";
+
+import configureStore from "./redux/configureStore";
+
+const initialState = {};
+const store = configureStore(initialState, history);
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <App />
+      </ConnectedRouter>
+    </Provider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

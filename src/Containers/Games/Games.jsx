@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Games = () => {
     return (
         <div>
-            TOP
+            games
         </div>
     )
 }
 
-export default Top
+export default Games

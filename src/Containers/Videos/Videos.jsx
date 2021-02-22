@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Videos = () => {
     return (
         <div>
-            TOP
+            Videos
         </div>
     )
 }
 
-export default Top
+export default Videos

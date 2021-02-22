@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Life = () => {
     return (
         <div>
-            TOP
+            Life
         </div>
     )
 }
 
-export default Top
+export default Life

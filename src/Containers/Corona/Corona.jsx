@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Corona = () => {
     return (
         <div>
-            TOP
+            Corona
         </div>
     )
 }
 
-export default Top
+export default Corona

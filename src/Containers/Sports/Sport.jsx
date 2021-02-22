@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Sport = () => {
     return (
         <div>
-            TOP
+            Sport
         </div>
     )
 }
 
-export default Top
+export default Sport

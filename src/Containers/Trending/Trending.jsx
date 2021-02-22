@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Trending = () => {
     return (
         <div>
-            TOP
+            Trending
         </div>
     )
 }
 
-export default Top
+export default Trending

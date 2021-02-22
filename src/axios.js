@@ -1,7 +1,5 @@
 import axios from "axios"
 
-const request = axios.create({
-    baseURL: "https://today.line.me/id/portaljson"
-})
+const request = axios.get("/portaljson")
 
 export default request;

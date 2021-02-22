@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Campus = () => {
     return (
         <div>
-            TOP
+            campus
         </div>
     )
 }
 
-export default Top
+export default Campus

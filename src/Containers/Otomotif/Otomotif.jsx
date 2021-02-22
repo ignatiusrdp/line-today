@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Otomotif = () => {
     return (
         <div>
-            TOP
+            Otomotif
         </div>
     )
 }
 
-export default Top
+export default Otomotif

@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Movie = () => {
     return (
         <div>
-            TOP
+            Movie
         </div>
     )
 }
 
-export default Top
+export default Movie

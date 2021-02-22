@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const Regional = () => {
     return (
         <div>
-            TOP
+            Regional
         </div>
     )
 }
 
-export default Top
+export default Regional

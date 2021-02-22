@@ -1,10 +1,11 @@
 import React from 'react'
-const Top = () => {
+
+const KataGaul = () => {
     return (
         <div>
-            TOP
+            kata gaul
         </div>
     )
 }
 
-export default Top
+export default KataGaul
