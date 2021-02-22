@@ -1,0 +1,7 @@
+.nav-menus {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #eee;
+    top: 0;    
+}
