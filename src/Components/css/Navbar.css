@@ -6,7 +6,7 @@
     position: sticky;
     position: -webkit-sticky;
     background-color: #eee;
-    z-index: 2;
+    z-index: 999;
     top: 0;    
 }
 
@@ -15,10 +15,13 @@
     width: 100%;
     top: 3.5em;
     left: 0;
-    z-index: 999;
-    background-color: #eee;
     transform: translateX(100%);
-    transition: transform .5s ease;
+    transition: transform .25s ease;
+    
+}
+
+.tab-items{
+    background-color: #eee;
 }
 
 .tab-menu.active{
@@ -32,6 +35,11 @@
 .button-bar-icon {
     font-size: 1em;
 }
+
+.menu-button-icon{
+    display: none;
+}
+
 .nav-items {
     display: flex;
     width: 100%;
@@ -52,9 +60,55 @@
     color: inherit;
     text-align: center;
 }
+.menu-item.current{
+    background-color: black;
+    color: #eee;
+}
 
 .menu-item:hover,
 .menu-item:active{
-    background-color: black;
-    color: #eee;
+    cursor: pointer;
+}
+.nav-links.hightlight{
+    color: #ff697a;
+}
+
+
+@media only screen and (min-width: 1024px){
+    .menu-item{
+        display: inline-block;
+    }
+    .button-bar-icon {
+        display: none;
+    }
+    .menu-button-icon{
+        display: flex;
+        cursor: pointer;
+        margin-right: .5em;
+    }
+    .arrow-ico{
+        font-size: 1em;
+        margin-top: .3em;
+    }
+    
+    .tab-menu {
+        transform-origin: top;
+        opacity: 0;
+        max-height: 0;
+        transition: max-height .25s ease, opacity .5s linear;
+        
+    }
+    
+    .tab-menu.active{
+        max-height: 100vh;
+        height: 100vh;
+        background-color: rgba(0,0,0,.6);
+        opacity: 1;
+    }
+    .menu-item:hover,
+    .menu-item:active{
+        border-bottom: 1px solid black;
+        
+    }
+    
 }

@@ -6,8 +6,8 @@ import {
   
 const initialState = { 
 categories: [], 
-categoryList: [], 
-loading: false,
+categoryTab: [], 
+loading: true,
 error: ""
 
 }
@@ -24,7 +24,7 @@ const appReducer = (state = initialState, action) => {
                 ...state,
                 loading: false,
                 categories: action.payload.categories,
-                categoryList: action.payload.categoryList
+                categoryTab: action.payload.categoryTab
             }
 
         case FETCH_DATA_FAILURE:

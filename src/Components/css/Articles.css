@@ -1,0 +1,46 @@
+.articles-card-wrapper{
+    padding: 1em;
+}
+
+.articles-card {
+    background-color: #eee;
+}
+
+.articles-card .articles-title{
+    padding: .5em .5em 0 .5em;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.articles-card .articles-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em;
+}
+
+.articles-card .articles-item{
+    width: 50%;
+    padding: .2em .5em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.articles-item .article-thumbnail{
+    width: 100%;
+    height: 6em;
+}
+
+.articles-item p {
+    margin: .2em 0;
+    font-size: .85em;
+    font-weight: 500;
+}
+
+.articles-item p:last-child{
+    font-size: .7em;
+    color:lightslategrey;
+}
+
+
