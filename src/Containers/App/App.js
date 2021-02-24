@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useDispatch , useSelector} from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Carousel from "../../Components/Carousel"
 import Navbar from "../../Components/Navbar";
 import Top from "../Top/Top";
 import Showbiz from "../Showbiz/Showbiz";
@@ -25,17 +26,20 @@ import KataGaul from "../KataGaul/KataGaul";
 import English from "../English/English";
 import Music from "../Music/Music";
 import Campus from "../Campus/Campus";
-
 import {
-  fetchUsers
+  fetchData
 } from "./redux/action"
+import "./css/App.css"
+
+
 function App() {
   const appState = useSelector((state) => state.appState)
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchUsers())
+    dispatch(fetchData())
   }, [])
+
   return (
     <div>
        <Helmet
@@ -71,11 +75,12 @@ function App() {
                   <Route path="/English" component={English}/>
                   <Route path="/Music" component={Music}/>
                   <Route path="/Campus" component={Campus}/>
+                  <Route path="/test" component={Carousel}/>
             </Switch>
           </div>
         :
-        <div>
-          Loading
+        <div className="loading-container">
+          <h1>Loading</h1>
         </div>
       }
     </div>

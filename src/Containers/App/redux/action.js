@@ -20,7 +20,7 @@ export const fetchDataFailure = (error) => {
     }
 }
 
-export const fetchUsers = () =>{
+export const fetchData = () =>{
     return async function(dispatch) {
         axios.get("/portaljson")
             .then( (response) => {
